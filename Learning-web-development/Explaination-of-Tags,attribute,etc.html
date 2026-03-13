@@ -1,117 +1,304 @@
-HTML stand for HyperText Markup Language
-
-Headers,CSS, and JavaScript
-
-<H1> - Main Heading: The main title or topic of the page. Only one <h1> should typically be used, acting as the primary headline.
-    <h1>Text here</h1>
-<H2> - Major subheadings: Major subheadings that divide the content into main sections.
-    <h2>Text here</h2>
-<H3> - Sub-subheadings: Sub-subheadings used to break down the topics within <h2> sections.
-    <h3>Text here</h3>
-<H4> to H6: Used for further, nested subsections, with decreasing importance and smaller font sizes.
-    <h4>Text here</h4>
-    <h5>Text here</h5>
-    <h6>Text here</h6>
-
-<p> - 	Paragraph: used to define a paragraph of text.
-    <p>Text here</p>
-
-Opening Ex:<h1> - Closing Ex:</h1>
-
-CSS stands for Cascading Style Sheets. It is a style sheet language used to define the presentation, style, and layout of documents written in markup languages like HTML.
-JavaScript (JS) is a high-level, dynamic programming language that enables interactive and dynamic behavior on websites. It is one of the three core technologies of the World Wide Web, working alongside HTML (HyperText Markup Language) (which provides structure and content) and CSS (Cascading Style Sheets) (which controls the visual appearance).
-
-In short
-Css (Cascading Style Sheet) - for styling
-JavaScript - for interactivity
-
-Attributes and Tags
-<img> - The <img> tag in HTML coding is used to embed an image in a web page. It is a self-closing tag, meaning it does not require a separate closing </img> tag, and it defines a holding space for the referenced image.
-src (source): This is a required attribute that specifies the path or URL to the image file. The browser uses this location to find and display the image.
-Ex: <img src="URL">
-
-alt (alternative text): This attribute provides a description of the image for accessibility purposes.
-Ex: <img src="URL" alt="Description">
-
-href (Hypertext REFerence): It is an attribute primarily used with the <a> (anchor) tag to specify the destination URL that the hyperlink points to. Without it, an <a> tag will not function as a hyperlink.
-Ex: <a href="url">Link text</a>
-
-Link = tags - The <link> tag is typically placed in the <head> section of an HTML document and is used to bring in external files or provide meta-information about the page. It is an	 "empty" element, meaning it does not wrap any content and only uses attributes
-Ex: <link rel="stylesheet" href="style.css">
-
-rel = attributes - The rel attribute (short for "relationship") is a required attribute for the <link> tag, and it tells the browser and search engines exactly what the linked resource is and how it should be used in the context of the current page**.**
-Ex: <link rel="stylesheet" href="style.css">
-
-<div> tag (short for "division"): is a generic container used to define a section or a division in an HTML document. It is a block-level element that, by itself, has no visual effect or semantic meaning
-Ex: <div class="container">
-        <h2>London</h2>
-        <p>London is the capital city of England.</p>
-        <p>London has over 9 million inhabitants.</p>
-    </div>
-
-<section>: tag is a semantic element used to represent a generic standalone section of a document, such as chapters, an introduction, news items, or contact information. It is used to group content that is thematically related and would typically appear with its own heading in the document's outline.
-Ex: section>
-  <h2>Main Section Title</h2>
-  <p>Content related to the main theme.</p>
-</section>
-
-Class & ID In HTML, the class and id attributes are used to identify and group elements for styling with CSS and manipulation with JavaScript. The primary difference is the uniqueness of their values within a single HTML document.
-Class: attribute in HTML is used to assign one or more class names to an element, allowing developers to group elements and apply consistent styles with CSS or manipulate them with JavaScript. Classes can be used on any HTML element.
-ID: attribute specifies a unique identifier for a single HTML element within a document. This identifier is primarily used for targeting that specific element with CSS and JavaScript, and for creating internal page anchors (bookmarks).
-Both Ex of Class & id: <!-- A unique ID for the main header -->
-    <h1 id="main-header">Welcome to My Website</h1>
-
-    <!-- Multiple elements can share the same class -->
-    <p class="warning-text">This is a warning message.</p>
-    <div class="warning-text">
-        Another element with the same warning style.
-    </div>
-
-<figure> & <figcaption> elements are used together to provide semantic structure and a descriptive caption for self-contained content such as images, diagrams, code snippets, or quotes.
-Ex: <figure>
-  <img src="pic\_trulli.jpg" alt="Trulli" style="width:100%">
-  <figcaption>Fig.1 - Trulli, Puglia, Italy</figcaption>
-</figure>
-
-The <blockquote> HTML tag represents a long, extended quotation taken from another source. It separates this text from the main body, usually by indenting it, to improve readability and indicate that the content is not the original author's words. It is commonly used for long quotes, testimonials, or excerpts from other works, and it can include a cite attribute to reference the source of the quotation.
-Ex: <blockquote cite="https://www.goodreads.com/quotes/1069-be-yourself-everyone-else-is-already-taken">
-      <p>Be yourself; everyone else is already taken.</p>
-</blockquote>
-
-The HTML tags <dl>, <dt>, and <dd> are used together to create a description list, which organizes content into term and description pairs, similar to a glossary or a dictionary.
- <dl> tag defines the overall description list.
-<dt> tag specifies a term or name,
-<dd>tag provides the corresponding description or definition for that term. This structure allows for clear and semantic organization of related information.
-Ex: <dl>
-  <dt>HTML</dt>
-  <dd>Hypertext Markup Language, used for structuring content on the web.</dd>
-  <dt>CSS</dt>
-  <dd>Cascading Style Sheets, used for styling the presentation of a document.</dd>
-  <dt>JavaScript</dt>
-  <dd>A programming language that enables interactive web pages.</dd>
-</dl>
-
-The importance of Boilerplate
-Boilerplate: In HTML, boilerplate refers to the standard, minimal template of code required to start any valid web page. It provides the essential structure (skeleton) for a browser to correctly read and display content, ensuring consistency and cross-browser compatibility.
-Ex: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTML Guide</title>
 </head>
 <body>
-    <!-- All visible content goes here -->
-    <h1>Hello, World!</h1>
+
+<header>
+<h1>HTML Guide</h1>
+<p>Learn important HTML tags with explanations and live examples.</p>
+</header>
+
+<nav>
+<h2>Table of Contents</h2>
+<ul>
+<li><a href="#text-tags">Text Tags</a></li>
+<li><a href="#non-semantic">Non-Semantic Tags</a></li>
+<li><a href="#semantic">Semantic Tags</a></li>
+<li><a href="#media">Media Tags</a></li>
+<li><a href="#void-elements">Void Elements</a></li>
+<li><a href="#tags">Tags</a></li>
+<li><a href="#attributes">Attributes</a></li>
+<li><a href="#boilerplate">HTML Boilerplate</a></li>
+<li><a href="#mainbody">Main & Body Tags</a></li>
+</ul>
+</nav>
+
+<main>
+
+<!-- TEXT TAGS -->
+<section id="text-tags">
+<h2>Text Tags</h2>
+
+<h3>&lt;h1&gt; - Main Heading</h3>
+<p>H1 represents the most important heading of the page, usually the main title.</p>
+<div class="example">&lt;h1&gt;H1 - Main Heading Example&lt;/h1&gt;<br>H1 - Main Heading Example</div>
+<hr>
+
+<h3>&lt;h2&gt; - Subheading</h3>
+<p>H2 is used for major sections or subheadings under H1.</p>
+<div class="example">&lt;h2&gt;H2 - Subheading Example&lt;/h2&gt;<br>H2 - Subheading Example</div>
+<hr>
+
+<h3>&lt;h3&gt; - Sub-subheading</h3>
+<p>H3 is used under H2 to further break down content.</p>
+<div class="example">&lt;h3&gt;H3 Example&lt;/h3&gt;<br>H3 Example</div>
+<hr>
+
+<h3>&lt;p&gt; - Paragraph</h3>
+<p>Paragraphs define blocks of text for content.</p>
+<div class="example">&lt;p&gt;This is a paragraph example.&lt;/p&gt;<br>This is a paragraph example.</div>
+<hr>
+
+<h3>&lt;ul&gt; &lt;li&gt; - Unordered List</h3>
+<p>Unordered lists are for grouping items without a particular order.</p>
+<div class="example">
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Item 2&lt;/li&gt;<br>
+&lt;/ul&gt;<br>
+<ul><li>Item 1</li><li>Item 2</li></ul>
+</div>
+<hr>
+
+<h3>&lt;ol&gt; &lt;li&gt; - Ordered List</h3>
+<p>Ordered lists display items in a numbered sequence.</p>
+<div class="example">
+&lt;ol&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;First&lt;/li&gt;<br>
+&nbsp;&nbsp;&lt;li&gt;Second&lt;/li&gt;<br>
+&lt;/ol&gt;<br>
+<ol><li>First</li><li>Second</li></ol>
+</div>
+<hr>
+
+<h3>&lt;blockquote&gt; - Quote</h3>
+<p>Blockquote is used for quoting content from another source.</p>
+<div class="example">&lt;blockquote&gt;Be yourself;&lt;/blockquote&gt;<br><blockquote>Be yourself; everyone else is already taken.</blockquote></div>
+<hr>
+
+<h3>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt; - Description List</h3>
+<p>Description lists organize terms and definitions.</p>
+<div class="example">
+&lt;dl&gt;<br>
+&nbsp;&nbsp;&lt;dt&gt;HTML&lt;/dt&gt;<br>
+&nbsp;&nbsp;&lt;dd&gt;Structures pages&lt;/dd&gt;<br>
+&lt;/dl&gt;<br>
+<dl><dt>HTML</dt><dd>Structures pages</dd></dl>
+</div>
+<hr>
+</section>
+
+<!-- NON-SEMANTIC TAGS -->
+<section id="non-semantic">
+<h2>Non-Semantic Tags</h2>
+
+<h3>&lt;div&gt; - Generic Container</h3>
+<p>Div is a block-level container with no semantic meaning, used for grouping elements.</p>
+<div class="example"><div class="container"><h3>Example Div</h3>&lt;div&gt;This is inside a div container.&lt;/div&gt;</p></div></div>
+<hr>
+
+<h3>&lt;span&gt; - Inline Container</h3>
+<p>Span is an inline container for text or elements with no semantic meaning.</p>
+<div class="example"><span>&lt;span&gt;Example Text&lt;/span&gt;<br>Example Text</span></div>
+<hr>
+</section>
+
+<!-- SEMANTIC TAGS -->
+<section id="semantic">
+<h2>Semantic Tags</h2>
+
+<h3>&lt;section&gt; - Section</h3>
+<p>Represents a thematic grouping of content, typically with its own heading.</p>
+<div class="example"><section><h3>Section Example</h3><p>Content in a &lt;section&gt;&lt;/section&gt; tag.</p></section></div>
+<hr>
+
+<h3>&lt;article&gt; - Article</h3>
+<p>Represents independent content, like a blog post or news article.</p>
+<div class="example"><article><h3>Article Example</h3><p>Content in an &lt;article&gt;&lt;/article&gt; element.</p></article></div>
+<hr>
+
+<h3>&lt;aside&gt; - Aside</h3>
+<p>Content tangentially related to main content, often sidebars or tips.</p>
+<div class="example"><h3>Aside Example</h3>&lt;aside&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Related Information&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Details about the topic.&lt;/p&gt;<br>&lt;/aside&gt;</div>
+<hr>
+
+<h3>&lt;header&gt; - Header</h3>
+<p>Represents introductory content, often containing navigational aids.</p>
+<div class="example"><header><h3>Header Example</h3>&lt;header&gt;&lt;/header&gt;</header></div>
+<hr>
+
+<h3>&lt;footer&gt; - Footer</h3>
+<p>Represents footer content for its nearest section or page.</p>
+<div class="example"><footer><h3>Footer Example</h3>&lt;footer&gt;&lt;/footer&gt;</footer></div>
+<hr>
+
+<h3>&lt;nav&gt; - Navigation</h3>
+<p>Represents a section containing navigation links.</p>
+<div class="example"><nav><h3>Nav Example</h3>&lt;nav&gt;<br>&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&lt;/ul&gt;<br>&lt;/nav&gt;<br><nav><a href="#about">About</a> | <a href="#home">Home</a></nav></div>
+<hr>
+
+<h3>&lt;legend&gt; - Legend</h3>
+<p>Represents a caption for the content of a fieldset.</p>
+<div class="example"><legend><h3>Legend Example</h3>&lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal Information&lt;/legend&gt;<br>&nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>&lt;/fieldset&gt;<br><fieldset><legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name" name="name"></fieldset></legend></div>
+<hr>    
+
+<!-- AUDIO -->
+<section id="media">
+    <h2>Media Tags</h2>
+    
+    <h3>&lt;video&gt; - Video Tag</h3>
+    <p>Used to embed video content.</p>
+    <div class="example">&lt;video src="video.mp4" controls&gt;&lt;/video&gt;<br><video src="https://www.w3schools.com/html/mov_bbb.mp4" controls muted></video></div>
+     <hr>
+
+    <h3>&lt;Audio&gt; - Audio Tag</h3>
+<p>Used to embed audio content.</p>
+<div class="example">&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;<br><audio src="https://www.w3schools.com/html/horse.mp3" controls muted></audio></div>
+
+<h3>&lt;iframe&gt; - Inline Frame Tag</h3>
+<p>Used to embed another HTML page within the current page.</p>
+<div class="example">&lt;iframe src="https://www.bing.com" width="600" height="400"&gt;&lt;/iframe&gt;<br><iframe src="https://www.bing.com" width="350" height="250"></iframe></div>
+
+    </section>
+
+<!-- VOID ELEMENTS -->
+<section id="void-elements">
+<h2>Void Elements</h2>
+
+<h3>&lt;link&gt; - Link Tag</h3>
+<p>Used to link external resources like CSS files.</p>
+<div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+<hr>
+
+<h3>&lt;br&gt; - Line Break</h3>
+<p>Inserts a single line break.</p>
+<div class="example">First Line&lt;br&gt;Second Line<br>First Line<br>Second Line</div>
+<hr>
+
+<h3>&lt;hr&gt; - Horizontal Rule</h3>
+<p>Displays a horizontal line to separate content.</p>
+<div class="example">&lt;hr&gt;<hr></div>
+<hr>
+
+<h3>&lt;img&gt; - Image</h3>
+<p>Displays an image.</p>
+<div class="example">&lt;img src="https://via.placeholder.com/100"&gt;<br><img src="https://via.placeholder.com/100" alt="Example Image"></div>
+<hr>
+
+<h3>&lt;input&gt; - Form Input</h3>
+<p>Represents an input field in forms.</p>
+<div class="example">&lt;input type="text" placeholder="Type here"&gt;<br><input type="text" placeholder="Type here"></div>
+<hr>
+
+<h3>&lt;button&gt; - Button</h3>
+<p>Clickable button element.</p>
+<div class="example">&lt;button&gt;Click Me&lt;/button&gt;<br><button>Click Me</button></div>
+<hr>
+
+</section>
+
+<!-- TAGS -->
+<section id="tags">
+<h2>Tags</h2>
+
+  <h3>&lt;a&gt; - Anchor Tag</h3>
+<p>Creates a hyperlink to another page or location.</p>
+<div class="example">&lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;<br><a href="https://example.com" target="_blank">Visit Example</a></div>
+<hr>
+
+<h3>&lt;details&gt; &lt;summary&gt;</h3>
+<p>Details/summary toggle content visibility.</p>
+<div class="example"><details><summary>Click to expand</summary><p>&lt;details&gt;&lt;summary&gt;Nothing to see here&lt;/summary&gt;&lt;/details&gt;</p></details></div>
+<hr>
+
+<h3>&lt;progress&gt; - Progress Bar</h3>
+<p>Displays progress of a task.</p>
+<div class="example">&lt;progress value="50" max="100"&gt;<br><progress value="50" max="100"></progress></div>
+<hr>
+
+<h3>&lt;time&gt; - Time</h3>
+<p>Represents a specific time or date.</p>
+<div class="example">&lt;time datetime="2026-03-12"&gt;March 12, 2026&lt;/time&gt;<br><time datetime="2026-03-12">March 12, 2026</time></div>
+<hr>
+</section>
+
+<h3>&lt;source&gt; - Source</h3>
+<p>Specifies multiple media resources for &lt;video&gt; or &lt;audio&gt; elements.</p>
+<div class="example">&lt;source src="video.mp4" type="video/mp4"&gt;</div>
+<hr>
+
+<!-- - ATTRIBUTES -->
+<section id="attributes">
+  <h2>Attributes</h2>
+
+<h3>src="" - Source Attribute</h3>
+<p>Specifies the URL of the resource to embed.</p>
+<div class="example">&lt;img <strong>src</strong>="image.jpg" alt="Example Image"&gt;</div>
+<div class="example">&lt;video <strong>src</strong>="video.mp4"&gt;</div>
+<div class="example">&lt;audio <strong>src</strong>="audio.mp3"&gt;</div>
+<hr>
+
+<h3>alt="" - Alternative Text Attribute</h3>
+<p>Provides alternative text for images.</p>
+<div class="example">&lt;img src="image.jpg" <strong>alt</strong>="Example Image"&gt;</div>
+<hr>
+
+<h3>href="" - Hyperlink Attribute</h3>
+<p>Specifies the URL of the page the link goes to.</p>
+<div class="example">&lt;a <strong>href</strong>="https://example.com"&gt;Visit Example&lt;/a&gt;</div>
+<hr>
+
+<h3>target="" - Target Attribute</h3>
+<p>Specifies where to open the linked document.</p>
+<div class="example">&lt;a href="https://example.com" <strong>target</strong>="_blank"&gt;Visit Example&lt;/a&gt;</div>
+<hr>
+
+  </section>
+
+<!-- BOILERPLATE -->
+<section id="boilerplate">
+<h2>HTML Boilerplate</h2>
+<p>The basic starting template for any HTML page.</p>
+<div class="example">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="en"&gt;<br>
+&lt;head&gt;<br>
+&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+&nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+&nbsp;&nbsp;&lt;title&gt;Document&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&nbsp;&nbsp;&lt;h1&gt;Hello World&lt;/h1&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<hr>
+
+</section>
+
+<!-- MAIN & BODY -->
+<section id="mainbody">
+<h2>Main & Body Tags</h2>
+
+<h3>&lt;main&gt; - Main Content</h3>
+<p>The primary content of the page.</p>
+<div class="example"><main><p>This is the main content area.</p></main></div>
+<hr>
+
+<h3>&lt;body&gt; - Body</h3>
+<p>Contains all visible content on the page.</p>
+<div class="example"><body><p>Everything visible is inside &lt;body&gt;.</p></body></div>
+<hr>
+
+</section>
+
+<footer>
+<p>Basic HTML Learning Page - With Live Examples & Explanations</p>
+</footer>
+
 </body>
 </html>
-<main> Tag Overview
-Purpose: The <main> element is an HTML5 semantic element that explicitly identifies the primary content of the document.
-Content: The content inside <main> should be unique to that specific page and directly related to its central topic. It should not contain content repeated across multiple pages, such as site logos, navigation links, sidebars, or copyright information.
-Usage: There can only be one <main> element per page (unless others are hidden using the hidden attribute).
-It must be a direct child of the <body> element or another appropriate parent like <div> or <form>, and cannot be nested within <article>, <aside>, <footer>, <header>, or <nav> elements.
-<body> Tag Overview
-Purpose: The <body> element acts as the primary container for all content that a user sees in the browser window.
-Content: It includes everything from text, images, and links to headers, footers, and navigation bars.
-Usage: Every HTML document must have one <body> tag, nested within the <html> element and after the <head> element.
