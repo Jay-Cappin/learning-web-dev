@@ -23,7 +23,7 @@
 <li><a href="#tags">Tags</a></li>
 <li><a href="#attributes">Attributes</a></li>
 <li><a href="#boilerplate">HTML Boilerplate</a></li>
-<li><a href="#mainbody">Main & Body Tags</a></li>
+<li><a href="#behindthescene-tags">Behind the Scenes Tags</a></li>
 </ul>
 </nav>
 
@@ -98,7 +98,7 @@
 
 <h3>&lt;div&gt; - Generic Container</h3>
 <p>Div is a block-level container with no semantic meaning, used for grouping elements.</p>
-<div class="example"><div class="container"><h3>Example Div</h3>&lt;div&gt;This is inside a div container.&lt;/div&gt;</p></div></div>
+<div class="example"><div class="container"><h3>Example Div</h3>&lt;div&gt;This is inside a div container.&lt;/div&gt;</div>
 <hr>
 
 <h3>&lt;span&gt; - Inline Container</h3>
@@ -126,6 +126,11 @@
 <div class="example"><h3>Aside Example</h3>&lt;aside&gt;<br>&nbsp;&nbsp;&lt;h1&gt;Related Information&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Details about the topic.&lt;/p&gt;<br>&lt;/aside&gt;</div>
 <hr>
 
+<h3>&lt;main&gt; - Main Content</h3>
+<p>The primary content of the page.</p>
+<div class="example">&lt;main&gt;&lt;p&gt;This is the main content area.&lt;/p&gt;&lt;/main&gt;</div>
+<hr>
+
 <h3>&lt;header&gt; - Header</h3>
 <p>Represents introductory content, often containing navigational aids.</p>
 <div class="example"><header><h3>Header Example</h3>&lt;header&gt;&lt;/header&gt;</header></div>
@@ -141,10 +146,16 @@
 <div class="example"><nav><h3>Nav Example</h3>&lt;nav&gt;<br>&nbsp;&nbsp;&lt;ul&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;<br>&nbsp;&nbsp;&lt;/ul&gt;<br>&lt;/nav&gt;<br><nav><a href="#about">About</a> | <a href="#home">Home</a></nav></div>
 <hr>
 
+<h3>&lt;fieldset&gt; - Fieldset</h3>
+<p>Groups related elements in a form.</p>
+<div class="example"><h3>Fieldset Example</h3> &lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal Information&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name>Name&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>&lt;/fieldset&gt;</fieldset><fieldset><legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name" name="name"></div>
+<hr>
+
 <h3>&lt;legend&gt; - Legend</h3>
 <p>Represents a caption for the content of a fieldset.</p>
-<div class="example"><legend><h3>Legend Example</h3>&lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal Information&lt;/legend&gt;<br>&nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>&nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>&lt;/fieldset&gt;<br><fieldset><legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name" name="name"></fieldset></legend></div>
-<hr>    
+<div class="example"><legend><h3>Legend Example</h3>&lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal Information&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label for="name"&gt;Name:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name" name="name"&gt;<br>&lt;/fieldset&gt;<br><fieldset><legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name" name="name"></fieldset></legend></div>
+<hr>   
+
 
 <!-- AUDIO -->
 <section id="media">
@@ -155,7 +166,7 @@
     <div class="example">&lt;video src="video.mp4" controls&gt;&lt;/video&gt;<br><video src="https://www.w3schools.com/html/mov_bbb.mp4" controls muted></video></div>
      <hr>
 
-    <h3>&lt;Audio&gt; - Audio Tag</h3>
+    <h3>&lt;audio&gt; - Audio Tag</h3>
 <p>Used to embed audio content.</p>
 <div class="example">&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;<br><audio src="https://www.w3schools.com/html/horse.mp3" controls muted></audio></div>
 
@@ -168,11 +179,6 @@
 <!-- VOID ELEMENTS -->
 <section id="void-elements">
 <h2>Void Elements</h2>
-
-<h3>&lt;link&gt; - Link Tag</h3>
-<p>Used to link external resources like CSS files.</p>
-<div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
-<hr>
 
 <h3>&lt;br&gt; - Line Break</h3>
 <p>Inserts a single line break.</p>
@@ -231,6 +237,11 @@
 <div class="example">&lt;source src="video.mp4" type="video/mp4"&gt;</div>
 <hr>
 
+<h3>&lt;body&gt; - Body</h3>
+<p>Contains all visible content on the page.</p>
+<div class="example">&lt;body&gt;&lt;p&gt;Everything visible is inside.&lt;/p&gt;&lt;/body&gt;</div>
+<hr>
+
 <!-- - ATTRIBUTES -->
 <section id="attributes">
   <h2>Attributes</h2>
@@ -257,6 +268,11 @@
 <div class="example">&lt;a href="https://example.com" <strong>target</strong>="_blank"&gt;Visit Example&lt;/a&gt;</div>
 <hr>
 
+<h3>rel="" - Relationship Attribute</h3>
+<p>Specifies the relationship between the current document and the linked resource.</p>
+<div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+<hr>
+
   </section>
 
 <!-- BOILERPLATE -->
@@ -280,24 +296,39 @@
 
 </section>
 
-<!-- MAIN & BODY -->
-<section id="mainbody">
-<h2>Main & Body Tags</h2>
+<!-- BECOME THE SCENE TAGS -->
+<section id="behindthescene-tags">
+<h2>Behind The Scene Tags</h2>
 
-<h3>&lt;main&gt; - Main Content</h3>
-<p>The primary content of the page.</p>
-<div class="example"><main><p>This is the main content area.</p></main></div>
+<h3>&lt;html&gt; - Root Element</h3>
+<p>Encloses the entire HTML document.</p>
+<div class="example">&lt;html lang="en"&gt;&lt;/html&gt;</div>
 <hr>
 
-<h3>&lt;body&gt; - Body</h3>
-<p>Contains all visible content on the page.</p>
-<div class="example"><body><p>Everything visible is inside &lt;body&gt;.</p></body></div>
+<h3>&lt;head&gt; - Head</h3>
+<p>Contains meta information about the document.</p>
+<div class="example">&lt;head&gt;&lt;/head&gt;</div>
+<hr>
+
+<h3>&lt;meta&gt; - Metadata</h3>
+<p>Provides metadata about the document, such as character encoding and viewport settings.</p> 
+<div class="example">&lt;meta charset="UTF-8"&gt;<br>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</div>
+<hr>
+
+<h3>&lt;link&gt; - Link</h3>
+<p>Specifies the relationship between the current document and an external resource, such as a stylesheet.</p>
+<div class="example">&lt;link rel="stylesheet" href="styles.css"&gt;</div>
+<hr>
+
+<h3>&lt;title&gt; - Title</h3>
+<p>Specifies the title of the document.</p>
+<div class="example">&lt;title&gt;My Web Page&lt;/title&gt;</div>
 <hr>
 
 </section>
 
 <footer>
-<p>Basic HTML Learning Page - With Live Examples & Explanations</p>
+<p>HTML Learning Page</p>
 </footer>
 
 </body>
