@@ -56,6 +56,38 @@
       <div class="example">&lt;p&gt;This is a paragraph example.&lt;/p&gt;<br>This is a paragraph example.</div>
       <hr>
 
+      <h3>&lt;strong&gt; - Strong</h3>
+      <p>Strong is used to indicate that the text has strong importance.</p>
+      <div class="example">&lt;strong&gt;This is strong text.&lt;/strong&gt;<br><strong>This is strong text.</strong></div>
+      <hr>
+
+      <h3>&lt;bold&gt; - Bold</h3>
+      <p>Bold is used to make text appear bold.</p>
+      <div class="example">&lt;bold&gt;This is bold text.&lt;/bold&gt;<br><bold>This is bold text.</bold></div>
+      <hr>
+
+      <h3>&lt;em&gt; - Emphasis</h3>
+      <p>Emphasis is used to indicate that the text has emphasis.</p>
+      <div class="example">&lt;em&gt;This is emphasized text.&lt;/em&gt;<br><em>This is emphasized text.</em></div>
+      <hr>
+      
+      <h3>&lt;i&gt; - Italic</h3>
+      <p>Italic is used to make text appear italic.</p>
+      <div class="example">&lt;i&gt;This is italic text.&lt;/i&gt;<br><i>This is italic text.</i></div>
+      <hr>
+      
+      <h3>&lt;q&gt; - Inline Quote</h3>
+      <p>Q is used for inline quotations.</p>
+      <div class="example">&lt;q&gt;This is an inline quote.&lt;/q&gt;<br><q>This is an inline quote.</q></div>
+      <hr>
+
+      <h3>&lt;quote&gt; - Block Quote</h3>
+      <p>Quote is used for longer quotations that stand alone from the main content.</p>
+      <div class="example">&lt;quote&gt;This is a block quote.&lt;/quote&gt;<br>
+        <quote>This is a block quote.</quote>
+      </div>
+      <hr>
+
       <h3>&lt;ul&gt; &lt;li&gt; - Unordered List</h3>
       <p>Unordered lists are for grouping items without a particular order.</p>
       <div class="example"> &lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Item
@@ -232,6 +264,12 @@
             src="https://www.w3schools.com/html/horse.mp3" controls muted></audio></div>
         <hr>
 
+        <h3>&lt;track&gt; - Track Tag</h3>
+        <p>Used to specify text tracks for media elements.</p>
+        <div class="example">&lt;video src="video.mp4" controls&gt;<br>&nbsp;&nbsp;&lt;track kind="captions"
+          src="captions.vtt" srclang="en"&gt;<br>&lt;/video&gt;</div>
+        <hr>
+
         <h3>&lt;iframe&gt; - Inline Frame Tag</h3>
         <p>Used to embed another HTML page within the current page.</p>
         <div class="example">&lt;iframe src="https://www.bing.com" width="600"
@@ -253,31 +291,31 @@
         <h3>&lt;fieldset&gt; - Fieldset</h3>
         <p>Groups related elements in a form. (This tag is also Semantic Tags)</p>
         <div class="example">
-         &lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal
+          &lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal
           Information&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label
           for="name>Name&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name"
           name="name"&gt;<br>&lt;/fieldset&gt;</fieldset>
           <fieldset>
             <legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name"
               name="name">
-              </fieldset>
+          </fieldset>
         </div>
         <hr>
 
-             <h3>&lt;legend&gt; - Legend</h3>
-      <p>Represents a caption for the content of a fieldset. (This tag is also Semantic Tags)</p>
-      <div class="example">
-        <legend>
-          &lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal
-          Information&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label
-          for="name"&gt;Name:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name"
-          name="name"&gt;<br>&lt;/fieldset&gt;<br>
-          <fieldset>
-            <legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name"
-              name="name">
-          </fieldset>
-      </div>
-      <hr>
+        <h3>&lt;legend&gt; - Legend</h3>
+        <p>Represents a caption for the content of a fieldset. (This tag is also Semantic Tags)</p>
+        <div class="example">
+          <legend>
+            &lt;fieldset&gt;<br>&nbsp;&nbsp;&lt;legend&gt;Personal
+            Information&lt;/legend&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;label
+            for="name"&gt;Name:&lt;/label&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text" id="name"
+            name="name"&gt;<br>&lt;/fieldset&gt;<br>
+            <fieldset>
+              <legend>Personal Information</legend><label for="name">Name:</label><input type="text" id="name"
+                name="name">
+            </fieldset>
+        </div>
+        <hr>
 
         <h3>&lt;input&gt; - Form Input</h3>
         <p>Represents an input field in forms.</p>
@@ -388,6 +426,11 @@
         <p>Contains all visible content on the page.</p>
         <div class="example">&lt;body&gt;&lt;p&gt;Everything visible is inside.&lt;/p&gt;&lt;/body&gt;</div>
         <hr>
+
+        <h3>&lt;cite&gt; - Citation</h3>
+        <p>Represents a reference to a creative work.</p>
+        <div class="example">&lt;cite&gt;The Great Gatsby&lt;/cite&gt;<br><cite>The Great Gatsby</cite></div>
+        <hr>
       </section>
 
       <!-- - ATTRIBUTES -->
@@ -425,6 +468,22 @@
         <h3>type="" - Type Attribute</h3>
         <p>Specifies the type of the element.</p>
         <div class="example">&lt;input type="text" name="username"&gt;</div>
+        <hr>
+
+        <h3>for="" - For Attribute</h3>
+        <p>Associates a label with an input element.</p>
+        <div class="example">&lt;label for="username"&gt;Username:&lt;/label&gt;<br>&lt;input type="text" id="username"
+          name="username"&gt;</div>
+        <hr>
+
+        <h3>value="" - Value Attribute</h3>
+        <p>Specifies the value of an input element.</p>
+        <div class="example">&lt;input type="text" name="username" <strong>value</strong>="JohnDoe"&gt;</div>
+        <hr>
+
+        <h3>placeholder="" - Placeholder Attribute</h3>
+        <p>Specifies a short hint that describes the expected value of an input element.</p>
+        <div class="example">&lt;input type="text" name="username" <strong>placeholder</strong>="Enter your username"&gt;</div>
         <hr>
 
       </section>
