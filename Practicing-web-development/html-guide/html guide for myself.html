@@ -88,6 +88,16 @@
       </div>
       <hr>
 
+      <h3>&lt;subscript&gt; - Subscript</h3>
+      <p>Subscript is used to make text appear as subscript.</p>
+      <div class="example">&lt;subscript&gt;This is subscript text.&lt;/subscript&gt;<br><subscript>This is subscript text.</subscript></div>
+      <hr>
+
+      <h3>&lt;supscript&gt; - Superscript</h3>
+      <p>Superscript is used to make text appear as superscript.</p>
+      <div class="example">&lt;supscript&gt;This is superscript text.&lt;/supscript&gt;<br><supscript>This is superscript text.</supscript></div>
+      <hr>
+
       <h3>&lt;ul&gt; &lt;li&gt; - Unordered List</h3>
       <p>Unordered lists are for grouping items without a particular order.</p>
       <div class="example"> &lt;ul&gt;<br>&nbsp;&nbsp;&lt;li&gt;Item 1&lt;/li&gt;<br>&nbsp;&nbsp;&lt;li&gt;Item
@@ -200,6 +210,15 @@
         <footer>
           <h3>Footer Example</h3>&lt;footer&gt;&lt;/footer&gt;
         </footer>
+      </div>
+      <hr>
+
+      <h3>&lt;address&gt; - Address</h3>
+      <p>Represents contact information for the author or owner of a page or article.</p>
+      <div class="example">
+        <address>
+          <h3>Address Example</h3>&lt;address&gt;&lt;/address&gt;
+        </address>
       </div>
       <hr>
 
@@ -318,7 +337,7 @@
         <hr>
 
         <h3>&lt;input&gt; - Form Input</h3>
-        <p>Represents an input field in forms.</p>
+        <p>Represents an input field in forms. (This tag is also a Void Element)</p>
         <div class="example">&lt;input type="text" placeholder="Type here"&gt;<br><input type="text"
             placeholder="Type here"></div>
         <hr>
@@ -384,6 +403,18 @@
         <p>Inserts a single line break.</p>
         <div class="example">First Line&lt;br&gt;Second Line<br>First Line<br>Second Line</div>
         <hr>
+
+         <h3>&lt;input&gt; - Form Input</h3>
+        <p>Represents an input field in forms. (This tag is also Form Tags)</p>
+        <div class="example">&lt;input type="text" placeholder="Type here"&gt;<br><input type="text"
+            placeholder="Type here"></div>
+        <hr>
+
+         <h3>&lt;source&gt; - Source</h3>
+        <p>Specifies multiple media resources for &lt;video&gt; or &lt;audio&gt; elements.</p>
+        <div class="example">&lt;source src="video.mp4" type="video/mp4"&gt;</div>
+        <hr>
+
       </section>
 
       <!-- TAGS -->
@@ -415,11 +446,6 @@
         <p>Represents a specific time or date.</p>
         <div class="example">&lt;time datetime="2026-03-12"&gt;March 12, 2026&lt;/time&gt;<br><time
             datetime="2026-03-12">March 12, 2026</time></div>
-        <hr>
-
-        <h3>&lt;source&gt; - Source</h3>
-        <p>Specifies multiple media resources for &lt;video&gt; or &lt;audio&gt; elements.</p>
-        <div class="example">&lt;source src="video.mp4" type="video/mp4"&gt;</div>
         <hr>
 
         <h3>&lt;body&gt; - Body</h3>
@@ -462,17 +488,17 @@
 
         <h3>rel="" - Relationship Attribute</h3>
         <p>Specifies the relationship between the current document and the linked resource.</p>
-        <div class="example">&lt;link rel="stylesheet" href="style.css"&gt;</div>
+        <div class="example">&lt;link <strong></strong>rel</strong>="stylesheet" href="style.css"&gt;</div>
         <hr>
 
         <h3>type="" - Type Attribute</h3>
         <p>Specifies the type of the element.</p>
-        <div class="example">&lt;input type="text" name="username"&gt;</div>
+        <div class="example">&lt;input <strong>type</strong>="text" name="username"&gt;</div>
         <hr>
 
         <h3>for="" - For Attribute</h3>
         <p>Associates a label with an input element.</p>
-        <div class="example">&lt;label for="username"&gt;Username:&lt;/label&gt;<br>&lt;input type="text" id="username"
+        <div class="example">&lt;label <strong>for</strong>="username"&gt;Username:&lt;/label&gt;<br>&lt;input type="text" id="username"
           name="username"&gt;</div>
         <hr>
 
@@ -486,7 +512,51 @@
         <div class="example">&lt;input type="text" name="username" <strong>placeholder</strong>="Enter your username"&gt;</div>
         <hr>
 
+        <h3>action="" - Action Attribute</h3>
+        <p>Specifies the action to be performed when the form is submitted.</p>
+        <div class="example">&lt;form <strong>action</strong>="/submit" method="post"&gt;&lt;/form&gt;</div>
+        <hr>
+          
+        <h3>method="" - Method Attribute</h3>
+        <p>Specifies the HTTP method to use when submitting the form.</p>
+        <div class="example">&lt;form action="/submit" <strong>method</strong>="post"&gt &lt;/form&gt;</div>
+        <hr>
       </section>
+
+      <h3>name="" - Name Attribute</h3>
+      <p>Specifies the name of an input element.</p>
+      <div class="example">&lt;input type="text" <strong>name</strong>="username"&gt;</div>
+      <hr>
+
+      <h3>id="" - ID Attribute</h3>
+      <p>Specifies a unique identifier for an element.</p>
+      <div class="example">&lt;div <strong>id</strong>="main-content"&gt;&lt;/div&gt;<br>&lt;input id="username" name="username"&gt;</div>
+      <hr>
+
+      <h3>class="" - Class Attribute</h3>
+      <p>Specifies one or more class names for an element.</p>
+      <div class="example">&lt;div <strong>class</strong>="container"&gt;&lt;/div&gt;</div>
+      <hr>
+
+      <h3>required - Required Attribute</h3>
+      <p>Specifies that an input field must be filled out before submitting the form.</p>
+      <div class="example">&lt;input type="text" name="username" <strong>required</strong>&gt;</div>
+      <hr>
+
+      <h3>value="" - Value Attribute</h3>
+      <p>Specifies the value of an input element.</p>
+      <div class="example">&lt;input type="text" name="username" <strong>value</strong>="JohnDoe"&gt;</div>
+      <hr>
+
+      <h3>maxlength="" & minlength="" - Max Length and Min Length Attributes</h3>
+      <p>Specifies the maximum and minimum number of characters allowed in an input element.</p>
+      <div class="example">&lt;input type="text" name="username" <strong>maxlength</strong>="20" <strong>minlength</strong>="2"&gt;</div>
+      <hr>
+
+      <h3>min="" & max="" - Min and Max Attributes</h3>
+      <p>Specifies the minimum and maximum values for an input element.</p>
+      <div class="example">&lt;input type="number" name="age" <strong>min</strong>="0" <strong>max</strong>="120"&gt;</div>
+      <hr>
 
       <!-- BOILERPLATE -->
       <section id="boilerplate">
