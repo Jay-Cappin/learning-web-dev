@@ -5,16 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Guide</title>
+  <link rel="stylesheet" href="/Practicing-web-development/html-guide/styles.css">
 </head>
 
 <body>
 
-  <header>
+  <header class="main-header">
     <h1>HTML Guide</h1>
     <p>Learn important HTML tags with explanations and live examples.</p>
   </header>
 
-  <nav>
+  <nav class="main-nav">
     <h2>Table of Contents</h2>
     <ul>
       <li><a href="#text-tags">Text Tags</a></li>
@@ -141,12 +142,11 @@
 
     <!-- NON-SEMANTIC TAGS -->
     <section id="non-semantic">
-      <h2>Non-Semantic Tags</h2>
+      <h2>Non-Semantic Tags</h2>  
 
       <h3>&lt;div&gt; - Generic Container</h3>
       <p>Div is a block-level container with no semantic meaning, used for grouping elements.</p>
       <div class="example">
-        <div class="container">
           <h3>Example Div</h3>&lt;div&gt;This is inside a div container.&lt;/div&gt;
         </div>
         <hr>
@@ -259,6 +259,7 @@
           </fieldset>
       </div>
       <hr>
+      </section>
 
 
       <!-- MEDIA -->
@@ -521,7 +522,6 @@
         <p>Specifies the HTTP method to use when submitting the form.</p>
         <div class="example">&lt;form action="/submit" <strong>method</strong>="post"&gt &lt;/form&gt;</div>
         <hr>
-      </section>
 
       <h3>name="" - Name Attribute</h3>
       <p>Specifies the name of an input element.</p>
@@ -557,6 +557,7 @@
       <p>Specifies the minimum and maximum values for an input element.</p>
       <div class="example">&lt;input type="number" name="age" <strong>min</strong>="0" <strong>max</strong>="120"&gt;</div>
       <hr>
+      </section>
 
       <!-- BOILERPLATE -->
       <section id="boilerplate">

@@ -1,0 +1,28 @@
+#box {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  
+}
+#box:hover {
+    background-color: #c300ff;
+ transform: rotate(10deg) translateX(50px);
+ transition: 0.5s;
+}
+
+.container {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#definition-list {
+  color: #c300ff;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+}
