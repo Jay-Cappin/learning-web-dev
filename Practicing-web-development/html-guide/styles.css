@@ -35,13 +35,18 @@ body {
   display: flex;
 }
 
-nav a {
+nav a { 
+  background-color:#333333;
+  padding: 20px;
+  border-radius: 10px;
     color: white;
     text-decoration: none;
-}
+    transition: 0.3s;
+} 
 
 nav a:hover {
-    color: #7700ff
+    color: #7700ff;
+    text-shadow: 0 0 10px #7700ff;
 }
 
 p, h2, h3 {
