@@ -47,6 +47,8 @@ nav a {
 nav a:hover {
     color: #7700ff;
     text-shadow: 0 0 10px #7700ff;
+    transform: scale(1.05);
+    border-color: #7700ff
 }
 
 p, h2, h3 {
@@ -64,6 +66,13 @@ section {
   border-radius: 8px;
   text-align: center;
   border: 2px solid grey;
+  transition: 0.3s;
+  box-shadow:0 0 10px black;
+}
+
+section:hover {
+  transform: scale(1.01);
+  border-color:#7700ff;
 }
 
 footer {
