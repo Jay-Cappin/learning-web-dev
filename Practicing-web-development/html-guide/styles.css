@@ -86,11 +86,12 @@ footer {
   border-radius: 8px;
   color: white;
   border: 1px solid grey;
+  line-height: 30px;
 }
 
   hr {
-    border: none;
-  height: 2px;
-  background-color: gray;
-  margin: 20px 0;
+   border: none;
+   height: 2px; 
+   background-color: gray;
+   margin: 20px 0;
   }

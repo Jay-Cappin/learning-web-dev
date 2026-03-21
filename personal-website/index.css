@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    line-height: 1.50;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px
+}
+
+.navigation ul {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container section {
+    background-color: #2A2A2A;
+    padding: 100px;
+    text-align: center;
+}
