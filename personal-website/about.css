@@ -28,12 +28,13 @@ nav ul {
 a {
     text-decoration: none;
     color: white;
+    transition: 0.3s ease-in-out;
 }
 
 a:hover {
-    transition: 0.3s ease-in-out;
     color: #6f00ff;
     text-shadow: 0 0 8px;
+    transform: translateY(5px);
 }
 
 ul {
