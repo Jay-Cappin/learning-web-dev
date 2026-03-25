@@ -39,7 +39,6 @@ a {
 a:hover {
     color: #6f00ff;
     text-shadow: 0 0 8px #6f00ff;
-    transform: translateY(-5px);
 }
 
 ul {

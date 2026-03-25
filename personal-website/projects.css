@@ -5,16 +5,16 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: #121212;
     color: white;
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
 }
 
 .main-header {
-    align-items: center;
-    justify-content: space-between;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 30px 200px;
 }
 
@@ -27,13 +27,14 @@ nav ul {
 
 a {
     text-decoration: none;
-    color: white;
     transition: 0.3s ease-in-out;
+    color: white;
 }
 
 a:hover {
     color: #6f00ff;
-    text-shadow: 0 0 8px;
+    text-shadow: 0 0 8px #6f00ff;
+    
 }
 
 ul {
@@ -43,23 +44,4 @@ ul {
 h1 {
     font-size: 30px;
     font-weight: 500;
-}
-
-h2 {
-    margin-bottom: 50px;
-    font-size: 40px;
-}
-
-section {
-    background-color: #2A2A2A;
-    margin: 30px 200px;
-    border-radius: 10px;
-    padding: 100px;
-    text-align: center;
-    box-shadow: 0 4px 15px#6f00ff;
-}   
-
-.address {
-    text-align: center;
-    padding: 20px;
 }
